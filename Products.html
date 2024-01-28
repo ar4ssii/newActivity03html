@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +9,11 @@
     <link rel="icon" type="image/x-icon" href="img/BE_logo.png">
 
     <!-- bootstrap plugins online -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <!-- \bootstrap plugins online -->
 
     <!-- css -->
@@ -29,54 +30,189 @@
     <link rel="stylesheet" href="assets/sb-css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
+<style>
+    .card-img-top {
+        height: 30rem;
+    }
+</style>
 
 <body>
+    <!-- Navigation Bar with Gradient Tricolor Bottom Border -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow navbar-custom">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="index.html">
+                <h3 class="brand-font-custom">
+                    <div class="text-uppercase">byte<span class="text-capitalize brand-color">boutique.</span></div>
+                </h3>
+                <!-- Add a span for the small screen text -->
+                <span class="brand-font-custom-small brand-font-custom">
+                    <div class="text-uppercase">byte<span class="text-capitalize brand-color">b.</span></div>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Products.html">Products</a>
+                    </li>
 
+                </ul>
+            </div>
+        </div>
 
+        <!-- Gradient border element -->
+        <div class="navbar-gradient-border shadow"></div>
+    </nav>
+    <!--\ Navigation Bar with Gradient Tricolor Bottom Border -->
 
-<!-- Navigation Bar with Gradient Tricolor Bottom Border -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow navbar-custom">
-    <div class="container">
-        <a class="navbar-brand d-flex" href="index.html">
-            <h3 class="brand-font-custom"><div class="text-uppercase">byte<span class="text-capitalize brand-color">boutique.</span></div></h3>
-            <!-- Add a span for the small screen text -->
-            <span class="brand-font-custom-small brand-font-custom"><div class="text-uppercase">byte<span class="text-capitalize brand-color">b.</span></div></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                    <a class="nav-link " href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="AboutUs.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="Products.html">Products</a>
-                </li>
-
-            </ul>
+    <!-- content starts here -->
+    <div class="container pt-4">
+        <h1 class="text-center">All Products</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-dark">
+            <div class="col animate__animated">
+                <div class="card h-100">
+                    <img src="assets/img/Lilies.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lilies</h5>
+                        <h5>Price: ₱1,200</h5>
+                        <p class="card-text">Description: Depending on the color, lilies can represent different things.
+                            White lilies are often associated with purity and virtue, while orange lilies symbolize
+                            passion.
+                        </p>
+                    </div>
+                    <div class=" card-footer text-center">
+                        <span class="form-control btn-sky" id="basic-addon2">Add To Cart</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col animate__animated">
+                <div class="card h-100">
+                    <img src="assets/img/Tulips.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tulips</h5>
+                        <h5>Price: ₱1,200</h5>
+                        <p class="card-text">Description: Red tulips represent true love, while yellow tulips symbolize
+                            cheerful thoughts.</p>
+                    </div>
+                    <div class=" card-footer text-center">
+                        <span class="form-control btn-sky" id="basic-addon2">Add To Cart</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col animate__animated">
+                <div class="card h-100">
+                    <img src="assets/img/Orchids.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Orchids</h5>
+                        <h5>Price: ₱1,500</h5>
+                        <p class="card-text">Description: Symbolize beauty, love, and strength. They are often
+                            associated with luxury and refinement.</p>
+                    </div>
+                    <div class=" card-footer text-center">
+                        <span class="form-control btn-sky" id="basic-addon2">Add To Cart</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col animate__animated">
+                <div class="card h-100">
+                    <img src="assets/img/Sunflowers.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunflowers</h5>
+                        <h5>Price: ₱800</h5>
+                        <p class="card-text">Description: Represent adoration, loyalty, and longevity. They are also a
+                            symbol of happiness and warmth.</p>
+                    </div>
+                    <div class=" card-footer text-center">
+                        <span class="form-control btn-sky" id="basic-addon2">Add To Cart</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col animate__animated">
+                <div class="card h-100">
+                    <img src="assets/img/Daisies.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Daisies</h5>
+                        <h5>Price: ₱700</h5>
+                        <p class="card-text">Description: Symbolize innocence, purity, and new beginnings. They are
+                            often associated with simplicity and loyalty.</p>
+                    </div>
+                    <div class=" card-footer text-center">
+                        <span class="form-control btn-sky" id="basic-addon2">Add To Cart</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col animate__animated">
+                <div class="card h-100">
+                    <img src="assets/img/Peonies.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Peonies</h5>
+                        <h5>Price: ₱1,500</h5>
+                        <p class="card-text">Description: Represent prosperity, good fortune, and a happy marriage. They
+                            are also known for their beauty and fragrance.</p>
+                    </div>
+                    <div class=" card-footer text-center">
+                        <span class="form-control btn-sky" id="basic-addon2">Add To Cart</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col animate__animated">
+                <div class="card h-100">
+                    <img src="assets/img/Cherry Blossoms.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cherry Blossoms</h5>
+                        <h5>Price: ₱1,200</h5>
+                        <p class="card-text">Description: Symbolize the transient nature of life and the beauty of
+                            fleeting moments. In Japanese culture, they represent the fragility and beauty of life.</p>
+                    </div>
+                    <div class=" card-footer text-center">
+                        <span class="form-control btn-sky" id="basic-addon2">Add To Cart</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col animate__animated">
+                <div class="card h-100">
+                    <img src="assets/img/Calla Lilies.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Calla Lilies</h5>
+                        <h5>Price: ₱1,200</h5>
+                        <p class="card-text">Description: Often associated with purity, faithfulness, and rebirth. They are elegant and have a timeless beauty.</p>
+                    </div>
+                    <div class=" card-footer text-center">
+                        <span class="form-control btn-sky" id="basic-addon2">Add To Cart</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col animate__animated">
+                <div class="card h-100">
+                    <img src="assets/img/red roses.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Roses</h5>
+                        <h5>Price: ₱1,000</h5>
+                        <p class="card-text">Description: Symbolize love and passion, often associated with romance.</p>
+                    </div>
+                    <div class=" card-footer text-center">
+                        <span class="form-control btn-sky" id="basic-addon2">Add To Cart</span>  
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Gradient border element -->
-    <div class="navbar-gradient-border shadow"></div>
-</nav>
-<!--\ Navigation Bar with Gradient Tricolor Bottom Border -->
 
-<!-- content starts here -->
-<div class="container pt-4">
-    <h1 class="text-center">All Products</h1>
-</div>
-
-
-<footer class="bg-dark text-white text-center py-4" style="margin-top: 100px;">
-    <div class="container-fluid">
-        <p>&copy; 2024 BYTEboutique. All rights reserved.</p>
-    </div>
-</footer>
+    <footer class="bg-dark text-white text-center py-4" style="margin-top: 100px;">
+        <div class="container-fluid">
+            <p>&copy; 2024 BYTEboutique. All rights reserved.</p>
+        </div>
+    </footer>
 
 
 
