@@ -1,7 +1,7 @@
-
 @font-face {
     font-family: 'MaharlikaFont';
-    src: url('fonts/Maharlika-DGAW.ttf') format('truetype'); /* Modern Browsers */
+    src: url('fonts/Maharlika-DGAW.ttf') format('truetype');
+    /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
 }
@@ -19,34 +19,39 @@
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(90deg,  #fad1f6, #22adf3);
+    background: linear-gradient(90deg, #fad1f6, #22adf3);
     /* background: linear-gradient(90deg,  #445bf5, #f5ab44); */
 }
 
 .brand-font-custom {
     font-family: 'MaharlikaFont', sans-serif;
-    
+
 }
 
-.brand-color{
+.brand-color {
     color: #22adf3;
 }
- /* Styles for small screens (e.g., phones) */
- @media (max-width: 767px) {
+
+/* Styles for small screens (e.g., phones) */
+@media (max-width: 767px) {
     .brand-font-custom {
-        display: none; /* Hide the full text on small screens */
+        display: none;
+        /* Hide the full text on small screens */
     }
 
     .brand-font-custom-small {
-        display: inline-block; /* Show the small screen text */
-        font-size: 18px; /* Adjust font size for smaller screens */
+        display: inline-block;
+        /* Show the small screen text */
+        font-size: 18px;
+        /* Adjust font size for smaller screens */
     }
 }
 
 /* Styles for larger screens */
 @media (min-width: 768px) {
     .brand-font-custom-small {
-        display: none; /* Hide the small screen text on larger screens */
+        display: none;
+        /* Hide the small screen text on larger screens */
     }
 }
 
@@ -64,14 +69,14 @@ body {
         background-position: 100% 50%;
     }
 }
+
 .bg-gradient-custom {
     width: 100%;
     /* Set your desired width */
     height: 100%;
     /* Set your desired height */
-    background: linear-gradient(90deg,#f87eec, #22adf3);
+    background: linear-gradient(90deg, #f87eec, #22adf3);
     /* Adjust the colors as per your preference */
-    border-radius: 20px;
     background-size: 200% 100%;
     animation: moveGradient 5s linear infinite;
 
@@ -79,14 +84,14 @@ body {
 
 
 .btn-sky {
-    background-color: #00bfdf;
-    border-color: #00bfdf;
+    background-color: #22adf3;
+    border-color: #22adf3;
     color: aliceblue;
 }
 
 .btn-sky-rounded-end-custom {
-    background-color: #00bfdf;
-    border-color: #00bfdf;
+    background-color: #22adf3;
+    border-color: #22adf3;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 10px !important;
     border-top-right-radius: 10px !important;
@@ -111,9 +116,9 @@ body {
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-  }
+}
 
-  .fixed-button::before {
+.fixed-button::before {
     content: "Add Product";
     position: absolute;
     background: rgba(0, 0, 0, 0.7);
@@ -126,31 +131,179 @@ body {
     bottom: 30px;
     right: 0;
     white-space: nowrap;
-  }
+}
 
-  .fixed-button:hover::before {
+.fixed-button:hover::before {
     visibility: visible;
     opacity: 1;
-  }
+}
 
-  .bg-gradient-custom-member {
+.bg-gradient-custom-member {
     width: 100%;
     /* Set your desired width */
     height: 300px;
     /* Set your desired height */
-    background: linear-gradient(90deg,#f87eec, #22adf3);
+    background: linear-gradient(90deg, #f87eec, #22adf3);
     /* Adjust the colors as per your preference */
-    
+
     background-size: 200% 100%;
     animation: moveGradient 5s linear infinite;
 
 }
 
 
-  .member-row{
+.member-row {
     /* overflow: auto; */
     margin-top: -200px;
+}
+
+
+
+/* style for expanding cards */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.container-custom {
+    display: flex;
+    /* width: 90vw; */
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #444444;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+.container-cs-height {
+    display: flex;
+    height: 90vh;
+
+}
+
+.what-we-do-small {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .what-we-do {
+        display: none;
+        /* Hide the full text on small screens */
+    }
+
+    .what-we-do-small {
+        display: inline-block;
+        /* Show the small screen text */
+        font-size: large;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+/* animation of what we do */
+
+.what-we-do-container {
+    position: relative;
+    /* overflow: hidden; */
+  }
+  
+  .what-we-do-container .what-we-do {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    animation: slide-in 1s ease-out forwards;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
+    }
   }
 
+  /* animation of what we do's information */
 
+  .fade-in-container {
+    opacity: 0;
+    animation: fade-in 1s ease-out forwards;
+  }
   
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: scale(1.05);
+  }
+
+  .container-image {
+    width: 150px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
